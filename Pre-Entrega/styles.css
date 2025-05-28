@@ -200,7 +200,7 @@ header {
     text-align: center;
     padding: 64px 0;
     width: 100%;
-    background-image: url('imagenes/fondo_header.jpg');
+    background-image: url('./imagenes/fondo_header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
