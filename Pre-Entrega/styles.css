@@ -1,0 +1,360 @@
+@font-face {
+    font-family: 'WDXLLubrifontTC';
+    src: url('WDXLLubrifontTC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'WDXLLubrifontTC', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: rgb(54, 54, 54);
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+.secciones {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 27px;
+    transition: color 0.3s ease;
+}
+
+.secciones:hover {
+    color: cyan;
+}
+
+.imagenes-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    margin: 0;
+    background-color: white;
+    padding: 40px;
+    border-radius: 0 0 10px 10px;
+}
+
+.imagen-principal {
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border: 3px solid rgb(54, 54, 54);
+    transition: transform 0.3s ease;
+    background-color: white;
+    padding: 10px;
+}
+
+.imagen-principal:hover {
+    transform: scale(1.02);
+    border-color: cyan;
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Clases específicas para cada logo */
+.logo-sap, .logo-oracle, .logo-dynamics,
+.logo-pbi, .logo-tableau, .logo-looker,
+.logo-html, .logo-css, .logo-js,
+.logo-python, .logo-kotlin, .logo-android {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.logo-sap:hover, .logo-oracle:hover, .logo-dynamics:hover,
+.logo-pbi:hover, .logo-tableau:hover, .logo-looker:hover,
+.logo-html:hover, .logo-css:hover, .logo-js:hover,
+.logo-python:hover, .logo-kotlin:hover, .logo-android:hover {
+    transform: scale(1.05);
+}
+
+.logo-sap img, .logo-oracle img, .logo-dynamics img,
+.logo-pbi img, .logo-tableau img, .logo-looker img,
+.logo-html img, .logo-css img, .logo-js img,
+.logo-python img, .logo-kotlin img, .logo-android img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.seccion {
+    margin: 40px 0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitulo {
+    margin: 0;
+    text-align: center;
+    font-size: 32px;
+    color: black;
+    width: 100%;
+    font-style: italic;
+    padding: 20px 0;
+}
+
+#inicio, #productos, #contacto {
+    scroll-margin-top: 80px; /* Para que el scroll se detenga antes del título */
+}
+
+#inicio .seccion {
+    background-color: rgb(54, 54, 54);
+    border-radius: 15px;
+    margin: 20px 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#inicio h2 {
+    background-color: cyan;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+    text-align: center;
+    font-size: 32px;
+    color: black;
+    width: 100%;
+    font-style: italic;
+}
+
+#productos h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: white;
+    width: 100%;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 64px 0;
+    width: 100%;
+    background-image: url('imagenes/fondo_header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+header h1, header p {
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 56px;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 29px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    text-align: center;
+    padding: 16px;
+    background: rgb(91, 91, 91);
+    margin-top: auto;
+    width: 100%;
+    color: white;
+}
+
+.contacto-info {
+    text-align: center;
+    width: 100%;
+}
+
+.contacto-info p {
+    font-size: 20px;
+    margin: 10px 0;
+    color: white;
+}
+
+.contacto-info a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contacto-info a:hover {
+    text-decoration: underline;
+}
+
+#productos .seccion {
+    background-color: rgb(54, 54, 54);
+    border-radius: 15px;
+    margin: 20px 0;
+    padding: 0;
+}
+
+#productos h3 {
+    font-style: italic;
+    margin-bottom: 0;
+    background-color: cyan;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.producto-seccion {
+    background-color: cyan;
+    border-radius: 10px;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+/* Media queries para diferentes resoluciones */
+@media screen and (min-width: 1366px) {
+    .imagen-principal {
+        height: 400px;
+        max-width: 1000px;
+    }
+    .logo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .logo-sap, .logo-oracle, .logo-dynamics,
+    .logo-pbi, .logo-tableau, .logo-looker,
+    .logo-html, .logo-css, .logo-js,
+    .logo-python, .logo-kotlin, .logo-android {
+        height: 150px;
+    }
+    .logo-sap img, .logo-oracle img, .logo-dynamics img,
+    .logo-pbi img, .logo-tableau img, .logo-looker img,
+    .logo-html img, .logo-css img, .logo-js img,
+    .logo-python img, .logo-kotlin img, .logo-android img {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .imagen-principal {
+        max-width: 100%;
+    }
+    .logo-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    .logo-sap, .logo-oracle, .logo-dynamics,
+    .logo-pbi, .logo-tableau, .logo-looker,
+    .logo-html, .logo-css, .logo-js,
+    .logo-python, .logo-kotlin, .logo-android {
+        height: 120px;
+    }
+    .logo-sap img, .logo-oracle img, .logo-dynamics img,
+    .logo-pbi img, .logo-tableau img, .logo-looker img,
+    .logo-html img, .logo-css img, .logo-js img,
+    .logo-python img, .logo-kotlin img, .logo-android img {
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .imagen-principal {
+        height: 250px;
+    }
+    .logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .logo-sap, .logo-oracle, .logo-dynamics,
+    .logo-pbi, .logo-tableau, .logo-looker,
+    .logo-html, .logo-css, .logo-js,
+    .logo-python, .logo-kotlin, .logo-android {
+        height: 100px;
+    }
+    .logo-sap img, .logo-oracle img, .logo-dynamics img,
+    .logo-pbi img, .logo-tableau img, .logo-looker img,
+    .logo-html img, .logo-css img, .logo-js img,
+    .logo-python img, .logo-kotlin img, .logo-android img {
+        max-width: 120px;
+    }
+    nav ul {
+        gap: 16px;
+    }
+} 
