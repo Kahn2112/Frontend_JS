@@ -15,4 +15,7 @@ Proyecto de página web con HTML5, CSS3 y JS para una consultora de software.
 
 ## Recursos
 - Fuente personalizada: WDXLLubrifontTC
-- Imágenes optimizadas para web 
+- Imágenes optimizadas para web
+
+  ## Vista Preliminar
+  - https://kahn2112.github.io/Frontend_JS/Pre-Entrega/
