@@ -15,6 +15,7 @@
         <ul>
             <li><a class="secciones" href="#inicio">Inicio</a></li>
             <li><a class="secciones" href="#productos">Productos</a></li>
+            <li><a class="secciones" href="#reseñas">Reseñas</a></li>
             <li><a class="secciones" href="#contacto">Contacto</a></li>
         </ul>
     </nav>
@@ -22,9 +23,9 @@
         <section id="inicio" class="seccion">
             <h2>Bienvenidos a nuestra consultora</h2>
             <div class="imagenes-inicio">
-                <img src="imagenes/oficina.jpg" alt="Equipo de trabajo en tecnología" class="imagen-principal">
-                <img src="imagenes/reporte_control.png" alt="Reporte de Control" class="imagen-principal">
-                <img src="imagenes/apps_moviles.png" alt="Aplicaciones Móviles" class="imagen-principal">
+                <img src="./imagenes/oficina.jpg" alt="Equipo de trabajo en tecnología" class="imagen-principal">
+                <img src="./imagenes/reporte_control.png" alt="Reporte de Control" class="imagen-principal">
+                <img src="./imagenes/apps_moviles.png" alt="Aplicaciones Móviles" class="imagen-principal">
             </div>
         </section>
 
@@ -36,12 +37,48 @@
                 <div class="logo-grid">
                     <div class="logo-sap">
                         <img src="./imagenes/sap.png" alt="SAP Logo">
+                        <div class="producto-info">
+                            <h4>SAP Business One</h4>
+                            <p class="precio">2,500 USD</p>
+                            <div class="controles-producto">
+                                <button class="btn-agregar" data-producto="SAP Business One" data-precio="2500">Agregar</button>
+                                <div class="controles-cantidad" style="display: none;">
+                                    <button class="btn-menos">-</button>
+                                    <span class="cantidad">1</span>
+                                    <button class="btn-mas">+</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="logo-oracle">
                         <img src="./imagenes/Oracle-logo.png" alt="Oracle Logo">
+                        <div class="producto-info">
+                            <h4>Oracle ERP Cloud</h4>
+                            <p class="precio">3,200 USD</p>
+                            <div class="controles-producto">
+                                <button class="btn-agregar" data-producto="Oracle ERP Cloud" data-precio="3200">Agregar</button>
+                                <div class="controles-cantidad" style="display: none;">
+                                    <button class="btn-menos">-</button>
+                                    <span class="cantidad">1</span>
+                                    <button class="btn-mas">+</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="logo-dynamics">
                         <img src="./imagenes/Dynamics-365-logo.jpg" alt="Microsoft Dynamics Logo">
+                        <div class="producto-info">
+                            <h4>Microsoft Dynamics 365</h4>
+                            <p class="precio">2,800 USD</p>
+                            <div class="controles-producto">
+                                <button class="btn-agregar" data-producto="Microsoft Dynamics 365" data-precio="2800">Agregar</button>
+                                <div class="controles-cantidad" style="display: none;">
+                                    <button class="btn-menos">-</button>
+                                    <span class="cantidad">1</span>
+                                    <button class="btn-mas">+</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -51,12 +88,48 @@
                 <div class="logo-grid">
                     <div class="logo-pbi">
                         <img src="./imagenes/power-bi-logo-1.jpg" alt="Power BI Logo">
+                        <div class="producto-info">
+                            <h4>Power BI Pro</h4>
+                            <p class="precio">1,500 USD</p>
+                            <div class="controles-producto">
+                                <button class="btn-agregar" data-producto="Power BI Pro" data-precio="1500">Agregar</button>
+                                <div class="controles-cantidad" style="display: none;">
+                                    <button class="btn-menos">-</button>
+                                    <span class="cantidad">1</span>
+                                    <button class="btn-mas">+</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="logo-tableau">
                         <img src="./imagenes/Tableau_Logo.png" alt="Tableau Logo">
+                        <div class="producto-info">
+                            <h4>Tableau Desktop</h4>
+                            <p class="precio">1,800 USD</p>
+                            <div class="controles-producto">
+                                <button class="btn-agregar" data-producto="Tableau Desktop" data-precio="1800">Agregar</button>
+                                <div class="controles-cantidad" style="display: none;">
+                                    <button class="btn-menos">-</button>
+                                    <span class="cantidad">1</span>
+                                    <button class="btn-mas">+</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="logo-looker">
                         <img src="./imagenes/google-looker-logo-png_seeklogo-394598.png" alt="Looker Studio Logo">
+                        <div class="producto-info">
+                            <h4>Looker Studio</h4>
+                            <p class="precio">1,200 USD</p>
+                            <div class="controles-producto">
+                                <button class="btn-agregar" data-producto="Looker Studio" data-precio="1200">Agregar</button>
+                                <div class="controles-cantidad" style="display: none;">
+                                    <button class="btn-menos">-</button>
+                                    <span class="cantidad">1</span>
+                                    <button class="btn-mas">+</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,21 +139,150 @@
                 <div class="logo-grid">
                     <div class="logo-html">
                         <img src="./imagenes/HTML5.png" alt="HTML5 Logo">
+                        <div class="producto-info">
+                            <h4>Desarrollo HTML5</h4>
+                            <p class="precio">800 USD</p>
+                            <div class="controles-producto">
+                                <button class="btn-agregar" data-producto="Desarrollo HTML5" data-precio="800">Agregar</button>
+                                <div class="controles-cantidad" style="display: none;">
+                                    <button class="btn-menos">-</button>
+                                    <span class="cantidad">1</span>
+                                    <button class="btn-mas">+</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="logo-css">
                         <img src="./imagenes/CSS3.png" alt="CSS3 Logo">
+                        <div class="producto-info">
+                            <h4>Diseño CSS3</h4>
+                            <p class="precio">900 USD</p>
+                            <div class="controles-producto">
+                                <button class="btn-agregar" data-producto="Diseño CSS3" data-precio="900">Agregar</button>
+                                <div class="controles-cantidad" style="display: none;">
+                                    <button class="btn-menos">-</button>
+                                    <span class="cantidad">1</span>
+                                    <button class="btn-mas">+</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="logo-js">
                         <img src="./imagenes/JS.png" alt="JavaScript Logo">
+                        <div class="producto-info">
+                            <h4>Programación JavaScript</h4>
+                            <p class="precio">1,100 USD</p>
+                            <div class="controles-producto">
+                                <button class="btn-agregar" data-producto="Programación JavaScript" data-precio="1100">Agregar</button>
+                                <div class="controles-cantidad" style="display: none;">
+                                    <button class="btn-menos">-</button>
+                                    <span class="cantidad">1</span>
+                                    <button class="btn-mas">+</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="logo-python">
                         <img src="./imagenes/PYTHON.png" alt="Python Logo">
+                        <div class="producto-info">
+                            <h4>Desarrollo Python</h4>
+                            <p class="precio">1,300 USD</p>
+                            <div class="controles-producto">
+                                <button class="btn-agregar" data-producto="Desarrollo Python" data-precio="1300">Agregar</button>
+                                <div class="controles-cantidad" style="display: none;">
+                                    <button class="btn-menos">-</button>
+                                    <span class="cantidad">1</span>
+                                    <button class="btn-mas">+</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="logo-kotlin">
                         <img src="./imagenes/Kotlin_Icon.png" alt="Kotlin Logo">
+                        <div class="producto-info">
+                            <h4>Desarrollo Kotlin</h4>
+                            <p class="precio">1,400 USD</p>
+                            <div class="controles-producto">
+                                <button class="btn-agregar" data-producto="Desarrollo Kotlin" data-precio="1400">Agregar</button>
+                                <div class="controles-cantidad" style="display: none;">
+                                    <button class="btn-menos">-</button>
+                                    <span class="cantidad">1</span>
+                                    <button class="btn-mas">+</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="logo-android">
                         <img src="./imagenes/android-logo.png" alt="Android Logo">
+                        <div class="producto-info">
+                            <h4>Desarrollo Android</h4>
+                            <p class="precio">1,600 USD</p>
+                            <div class="controles-producto">
+                                <button class="btn-agregar" data-producto="Desarrollo Android" data-precio="1600">Agregar</button>
+                                <div class="controles-cantidad" style="display: none;">
+                                    <button class="btn-menos">-</button>
+                                    <span class="cantidad">1</span>
+                                    <button class="btn-mas">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botón ir al carrito -->
+        <div class="boton-carrito-container" id="botonCarritoContainer" style="display: none;">
+            <button class="btn-ir-carrito" id="btnIrCarrito">
+                🛒 Ir al Carrito
+            </button>
+        </div>
+
+        <section id="reseñas" class="seccion">
+            <h2>Reseñas de Nuestros Clientes</h2>
+            <div class="reseñas-seccion">
+                <h3 class="subtitulo">Nuestros Clientes Opinan</h3>
+                <div class="reseñas-container">
+                    <div class="reseña-card">
+                        <div class="reseña-header">
+                            <img src="" alt="Cliente 1" class="cliente-imagen" id="cliente1">
+                            <div class="cliente-info">
+                                <h3 class="cliente-nombre" id="nombre1">Cargando...</h3>
+                                <p class="cliente-cargo" id="cargo1">Cargando...</p>
+                            </div>
+                        </div>
+                        <div class="reseña-contenido">
+                            <p class="reseña-texto" id="reseña1">"Excelente servicio y profesionalismo. La consultora nos ayudó a implementar soluciones que transformaron nuestro negocio completamente."</p>
+                            <div class="estrellas">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <div class="reseña-card">
+                        <div class="reseña-header">
+                            <img src="" alt="Cliente 2" class="cliente-imagen" id="cliente2">
+                            <div class="cliente-info">
+                                <h3 class="cliente-nombre" id="nombre2">Cargando...</h3>
+                                <p class="cliente-cargo" id="cargo2">Cargando...</p>
+                            </div>
+                        </div>
+                        <div class="reseña-contenido">
+                            <p class="reseña-texto" id="reseña2">"Increíble experiencia de trabajo. El equipo demostró un conocimiento profundo y entregó resultados excepcionales."</p>
+                            <div class="estrellas">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <div class="reseña-card">
+                        <div class="reseña-header">
+                            <img src="" alt="Cliente 3" class="cliente-imagen" id="cliente3">
+                            <div class="cliente-info">
+                                <h3 class="cliente-nombre" id="nombre3">Cargando...</h3>
+                                <p class="cliente-cargo" id="cargo3">Cargando...</p>
+                            </div>
+                        </div>
+                        <div class="reseña-contenido">
+                            <p class="reseña-texto" id="reseña3">"Altamente recomendados. Su enfoque innovador y atención al detalle superó todas nuestras expectativas."</p>
+                            <div class="estrellas">★★★★★</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,14 +290,75 @@
 
         <section id="contacto" class="seccion">
             <h2>Contacto</h2>
-            <div class="contacto-info">
-                <p>¿Listo para llevar tu empresa al siguiente nivel?</p>
-                <p>Email: <a class="secciones" href="mailto:contacto@consultorasoftware.com">contacto@consultorasoftware.com</a></p>
+            <div class="contacto-seccion">
+                <h3 class="subtitulo">Póngase en contacto con nosotros</h3>
+                <div class="contacto-container">
+                    <div class="contacto-imagen-container">
+                        <img src="" alt="Imagen de contacto" class="contacto-imagen" id="contactoImagen">
+                    </div>
+                    
+                    <form class="formulario-contacto" id="formularioContacto">
+                        <h3>Envíanos un mensaje</h3>
+                        
+                        <div class="campo-formulario">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                            <span class="error-mensaje" id="errorNombre"></span>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-mensaje" id="errorEmail"></span>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                            <span class="error-mensaje" id="errorTelefono"></span>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
+
+    <!-- Carrito de compras deslizable -->
+    <div class="carrito-overlay" id="carritoOverlay">
+        <div class="carrito-panel" id="carritoPanel">
+            <div class="carrito-header">
+                <h3>🛒 Carrito de Compras</h3>
+                <button class="btn-cerrar-carrito" id="btnCerrarCarrito">×</button>
+            </div>
+            
+            <div class="carrito-contenido" id="carritoContenido">
+                <p class="carrito-vacio">Tu carrito está vacío</p>
+            </div>
+            
+            <div class="carrito-footer">
+                <div class="carrito-total">
+                    <span>Total: <span id="carritoTotal">0</span> USD</span>
+                </div>
+                <button class="btn-checkout" id="btnCheckout" disabled>Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón flotante del carrito -->
+    <div class="carrito-flotante" id="carritoFlotante">
+        <span class="carrito-contador" id="carritoContador">0</span>
+        🛒
+    </div>
     <footer>
         <p>&copy; 2024 Consultora de Software. Todos los derechos reservados.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html> 
